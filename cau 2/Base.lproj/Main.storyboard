@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cau_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IjY-st-ubb">
+                                <rect key="frame" x="68" y="181" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ar1-X2-YWW"/>
+                                    <constraint firstAttribute="width" constant="240" id="P1b-ee-ubI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-yU-LDU">
+                                <rect key="frame" x="68" y="329" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8RY-Cz-HzZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="wJK-uP-yKO"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xsa-3d-ePN">
+                                <rect key="frame" x="0.0" y="44" width="602" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://znews-photo-td.zadn.vn/w660/Uploaded/SotnTJ/2015_09_22/Ronaldo_deLima_1.jpg" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOq-rN-4Ta">
+                                        <rect key="frame" x="0.0" y="0.0" width="602" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://znews-photo-td.zadn.vn/w660/Uploaded/SotnTJ/2015_09_22/Ronaldo_deLima_1.jpg" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQy-qY-R2w">
+                                        <rect key="frame" x="0.0" y="30" width="602" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aAv-Gu-AxF">
+                                <rect key="frame" x="27" y="125" width="110" height="200"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38P-XF-VXR">
+                                <rect key="frame" x="170" y="131" width="34" height="30"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obK-gR-Uey"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6615730246" green="0.6615730246" blue="0.6615730246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="38P-XF-VXR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7fT-AT-jfk"/>
+                            <constraint firstItem="38P-XF-VXR" firstAttribute="top" secondItem="Xsa-3d-ePN" secondAttribute="bottom" constant="27" id="Gut-uD-MeO"/>
+                            <constraint firstItem="IjY-st-ubb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="TKe-lp-r46"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qk6-yU-LDU" secondAttribute="trailing" constant="52" id="elM-z9-vjs"/>
+                            <constraint firstItem="Qk6-yU-LDU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="fNp-Mt-j9A"/>
+                            <constraint firstItem="38P-XF-VXR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="131" id="imC-aq-jy9"/>
+                            <constraint firstItem="IjY-st-ubb" firstAttribute="top" secondItem="38P-XF-VXR" secondAttribute="bottom" constant="20" id="jzy-tE-EUT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IjY-st-ubb" secondAttribute="trailing" constant="52" id="kam-0T-oD2"/>
+                            <constraint firstItem="Qk6-yU-LDU" firstAttribute="top" secondItem="IjY-st-ubb" secondAttribute="bottom" constant="20" id="nJe-iz-4lE"/>
+                            <constraint firstItem="38P-XF-VXR" firstAttribute="leading" secondItem="aAv-Gu-AxF" secondAttribute="trailing" constant="33" id="sdC-yY-TKe"/>
+                            <constraint firstItem="Qk6-yU-LDU" firstAttribute="top" secondItem="IjY-st-ubb" secondAttribute="bottom" constant="20" id="tE6-Qu-a9b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="img1" destination="IjY-st-ubb" id="fi0-n8-CiI"/>
+                        <outlet property="img2" destination="Qk6-yU-LDU" id="loX-NO-WBK"/>
+                        <outlet property="txt1" destination="kOq-rN-4Ta" id="XH2-9G-yQR"/>
+                        <outlet property="txt2" destination="kQy-qY-R2w" id="QcP-P4-mL4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
